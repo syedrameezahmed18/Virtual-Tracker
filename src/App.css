@@ -1,38 +1,314 @@
-.App {
-  text-align: center;
-}
+.mainheader{
+  height:700px;
+  background: url("images/cover.png");
+  background-size: cover;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headershade{
+  height:700px;
+  background: rgba(0,0,0,0.7);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color:white;
+  font-family: 'Sansita Swashed', cursive;
+  text-align: center;
+}
+.headershade h2{
+  font-size: 50px;
+}
+.headershade p{
+  font-size: 30px;
+  
+}
+.headershade p:hover{
+  cursor:pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.header{
+  height:80px;
+  font-family: 'Sansita Swashed', cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0,0,0,0.3);
+  font-size: 24px;
+  border-bottom: 2px solid orange;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.logoportion{
+  width:30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navs{
+  width:50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color:white;
+  
+}
+a:hover{
+  animation : colored 2.5s infinite linear;
+}
+.spec{
+  font-size: 30px;
+  font-weight: bold;
+  color:orange;
+}
+
+@keyframes colored{
+  0%{
+    color:white;
   }
-  to {
-    transform: rotate(360deg);
+  20%{
+    color: orange;
+  }
+  40%{
+    color: rgb(235, 217, 140);
+  }
+  60%{
+    color:orange;
+  }
+  80%{
+    color:rgb(255, 196, 0);
+  }
+  100%{
+    color:white;
   }
 }
+@media (max-width:700px){
+  .header{
+    font-size: 12px;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+    border-bottom: 2px solid orange;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1;
+
+  }
+  .navs{
+    width:57%;
+  }
+  a{
+    width:30%
+  }
+  .spec{
+    font-size: 20px;
+  }
+}
+
+.Daily{
+ margin-top: 5%;
+
+}
+.heads{
+  font-size: 34px;
+  font-family: 'Sansita Swashed', cursive;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+
+.cardsholder{
+  height:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card{
+  width:300px;
+  margin-top:6%;
+  text-align: center;
+  z-index:-1;
+}
+.card:hover{
+  cursor:pointer;
+  transform: scale(1.06);
+  transition-duration: 1s;
+  
+}
+.t1{
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 24px;
+}
+.t2{
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 18px;
+  font-weight: 300;
+}
+.green-card{
+  background: rgb(89, 161, 16);
+  color:white;
+  border-top: 4px solid darkgreen;
+  
+}
+.blue-card{
+  background:rgb(114, 114, 228);
+  color:white;
+  border-top:4px solid darkblue;
+}
+.purple-card{
+  background: rgb(170, 11, 170);
+  color:white;
+  border-top: 4px solid rgb(59, 6, 59);
+}
+.orange-card{
+  background: orange;
+  color:white;
+  border-top: 4px solid rgb(100, 74, 7);
+}
+
+.cardsholdershift{
+  
+  height:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.mainheader2{
+  height:700px;
+  background: url("images/cov2.jpg");
+  background-size: cover;
+}
+
+.distance{
+  margin-top: 3%;
+  
+}
+.btn{
+  margin-top: 5%;
+  margin-left: 45%;
+  margin-right: 40%;
+}
+
+.query{
+  margin-top:7%;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction:column;
+  height:100px;
+}
+.query input{
+  width:300px;
+}
+.mainheaderverse{
+  height:700px;
+  background: url("images/cov3.jpg");
+  background-size: cover;
+}
+
+.justbelow{
+  margin-top:5%;
+  text-align: center;
+  font-size: 26px;
+  font-family:  'Sansita Swashed', cursive;
+}
+.overload{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+.fixer{
+  position: fixed;
+  left:20%;
+  top:12%;
+  height:550px;
+  background: rgba(0,0,0,0.9);
+  color:white;
+  display: flex;
+  flex-direction: row;
+  width:60%;
+  font-family:  'Sansita Swashed', cursive;
+  font-size: 22px;
+  z-index:2;
+}
+.leftfix{
+  flex:1;
+}
+.leftfix img{
+  height:530px;
+  width:110%;
+}
+.rightfix{
+  flex:0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.cross{
+  position:relative;
+  height:50px;
+  width:50px;
+}
+.cross:hover{
+  cursor:pointer;
+}
+.pointerjam{
+  pointer-events:none;
+  
+}
+.unjam{
+  pointer-events: all;
+}
+@media (max-width:700px){
+  .fixer{
+    position:fixed;
+    height:600px;
+    display:flex;
+    flex-direction: column;
+    width:80%;
+    font-size: 16px;
+    left:7%;
+    top:10%;
+  }
+  .leftfix{
+    flex:1;
+  }
+  .leftfix img{
+    height: 350px;
+  }
+  .rightfix{
+    flex:1;
+    text-align: center;
+  }
+  .cross{
+    display: none;
+  }
+}
+
+.About{
+  margin-top:10%;
+  text-align: center;
+  font-size: 30px;
+}
+
+
