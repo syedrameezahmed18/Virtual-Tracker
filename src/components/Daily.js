@@ -60,7 +60,8 @@ class Daily extends Component {
                               itemrar={item.item.rarity}
                               itemcost={item.store.cost}
                               itembigpic={item.item.images.featured}
-                              itemoccur={item.store.occurrences}/></Fade>
+                              itemoccur={item.store.occurrences}
+                              itemid={id}/></Fade>
                         )
                     })
                 }

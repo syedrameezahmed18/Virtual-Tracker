@@ -9,6 +9,7 @@ const Searchdom = () => {
     let filtereditems= '';
     let inputref = useRef(null);
     let [inputval,setinputval]=useState('');
+    let [itsmeall,setitsmeall]=useState('iam');
 
     
 
@@ -73,7 +74,8 @@ const Searchdom = () => {
                         itemrar={truefilter.item.rarity}
                         itembigpic={truefilter.item.images.featured}
                         itemoccur={'0'}
-                        itemcost={truefilter.item.cost}/></Fade>
+                        itemcost={truefilter.item.cost}
+                        iamall={itsmeall}/></Fade>
                         )
                     })
                 }
